@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Domaci - Srna Radic</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+
+  <body>
+
+
+  	<header class="main-header">
+  		<div class="container center-xs-h1">
+  			<h1><a href="#"><img src="bootstrap-logo.png" alt="Bootstrap Grid Logo" class="img-responsive"></a></h1>
+  		</div>
+  	</header>
+
+
+    <div class="container">
+  		<nav>
+  			<ul class="list-reset">
+  				<li><a href="#">Home</a></li>
+  				<li><a href="#">Grid</a></li>
+  				<li><a href="#">Code</a></li>
+  				<li><a href="#">Learn it!</a></li>
+  			</ul>
+  		</nav>
+      </div>
+
+
+  		<main>
+
+        <div class="container">
+
+  			  <section>
+
+            <div class="row section1">
+              <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+  					    <img src="bootstrap.jpg" alt="Responsive Bootstrap" class="img-responsive">
+              </div>
+
+              <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
+  					    <h2 class="h2-margin">Bootstrap 3 Grid System</h2>
+                <div class="paragraf-style-1">
+  					      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum ligula
+                  enim, at dictum odio condimentum a. Nulla consectetur sapien ac pellentesque posuere. Sed faucibus elit vitae
+                  mauris cursus, sed sagittis magna molestie.</p>
+                </div>
+              </div>
+            </div>
+
+          <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <article class="bottom-margin">
+                  <h3 class="h3-style">Why Is It Good?</h3>
+                    <div class="paragraf-style-2">
+  					        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum ligula enim, at
+                    dictum odio condimentum a. Nulla consectetur sapien ac pellentesque posuere. Sed faucibus
+                    elitvitae mauris cursus.
+                    </p>
+                    </div>
+  					          <a href="#">Read more...</a>
+  				     </article>
+              </div>
+
+
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <article class="bottom-margin">
+                  <h3 class="h3-style">Mobile First</h3>
+                    <div class="paragraf-style-2">
+  					        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum ligula enim, at
+                    dictum odio condimentum a. Nulla consectetur sapien ac pellentesque posuere. Sed faucibus
+                    elitvitae mauris cursus.
+                    </p>
+                    </div>
+  					          <a href="#">Read more...</a>
+                </article>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-md-push-0 col-sm-6 col-sm-push-3 col-xs-12 ">
+                <article class="bottom-margin">
+                  <h3 class="h3-style">How does it work?</h3>
+                    <div class="paragraf-style-2">
+  					        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum ligula enim, at
+                    dictum odio condimentum a. Nulla consectetur sapien ac pellentesque posuere. Sed faucibus
+                    elitvitae mauris cursus.
+                    </p>
+                    </div>
+  					          <a href="#">Read more...</a>
+  				       </article>
+              </div>
+            </div> <!--ovo je div koji drzi row-->
+  			</section>
+
+
+
+  			<section>
+          <h3 class="second-h3-style">Any questions? Please, contact us.</h3>
+
+            <div class="row">
+              <div class="col-lg-8 col-md-7 col-sm-8 col-xs-12">
+
+                <!--Forma-->
+  				      <form method="get" action="poslato.html">
+  					      <div>
+  						      <label for="UserName">Name</label>
+  						      <input type="text" name="UserName" id="UserName" required>
+  					      </div>
+
+  				      	<div>
+  						      <label for="UserEmail">E-mail</label>
+  						      <input type="email" name="UserEmail" id="UserEmail" required>
+  					      </div>
+
+  					      <div>
+  					      	<label for="UserMessage">Message</label>
+  						      <textarea name="UserMessage" id="UserMessage" required></textarea>
+  					      </div>
+
+  					      <input type="submit" value="SEND">
+  				      </form>
+                <!--Forma END-->
+              </div>
+
+          <div class="col-lg-4 col-md-5 col-sm-4">
+  				  <img src="letter.svg" alt="Letter" class="img-responsive hidden-img">
+          </div>
+
+        </div>
+      </section>
+  				<!-- Form Section END -->
+
+    </div> <!--ovo zatvara container div koji se otvara odmah ispod maina-->
+  </main>
+
+
+  	  <footer class="main-footer">
+        <div class="container center-xs-footer">
+  			  <small>&copy; Krojačeva škola 2015.</small>
+        </div>
+  	  </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+
+/************************************************
+                 GLobal styles
+************************************************/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans Semibold', Arial, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+}
+
+article a {
+  display: inline-block;
+  color: #f90;
+  font-size: 16px;
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  text-decoration: underline;
+  padding-top: 20px;
+}
+
+article a:hover {
+  color: #f90;
+  font-size: 16px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+/************************************************
+                    Layout
+************************************************/
+.main-header {
+  width: 100%;
+  background-color: #333;
+  padding: 30px 0;
+}
+
+.main-footer {
+  width: 100%;
+  background-color: #333;
+  padding: 30px 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Open Sans Light', Arial, sans-serif;
+}
+/************************************************
+                Specific styles
+***********************************************/
+ nav ul li {
+  display: block;
+  float: left;
+  width: 165px;
+  height: 40px;
+  background-color: #ff9900;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li:hover {
+  background-color: #333333;
+}
+
+.paragraf-style-1 {
+  font-size: 20px;
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  color: #333;
+}
+
+form {
+  margin: auto;
+  position: relative;
+  font-family: 'Open Sans Semibold', Arial, sans-serif;
+  font-size: 16px;
+  color: #333333;
+
+}
+
+input[type=text], input[type=email], input[type=submit], textarea {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: 2px solid #333;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+textarea {
+  height: 130px;
+}
+/************************************************
+                  Helper classes
+************************************************/
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+/***************************************************
+                    Media queries
+***************************************************/
+@media all and (max-width:767px) {
+
+  /*Ovo centrira h1*/
+   .center-xs-h1 {
+     position: relative;
+     padding: 30px 0 30px 0;
+   }
+
+   .center-xs-h1 h1 a {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, -50%) }
+   }
+   /*Ovo centrira h1 END*/
+
+   .section1 {
+    margin: 30px 0 40px 0;
+   }
+
+   .h2-margin {
+     margin: 30px 0 30px 0;
+   }
+
+   .h3-style {
+     display: block;
+     text-align: center;
+     height: 50px;
+     background-color: #333;
+     color: #fff;
+     font-size: 24px;
+     font-family: Open Sans Light, Arial, sans-serif;
+     margin: 0 0 30px 0;
+     padding-top: 10px;
+   }
+
+   .second-h3-style {
+     width: 100%;
+     display: block;
+     text-align: center;
+     font-size: 24px;
+     font-family: Open Sans Semibold, Arial, sans-serif;
+     color: #333333;
+     padding: 80px 0 40px 0;
+   }
+
+  input[type=submit] {
+    background-color: #ff9900;
+    color: #fff;
+    border: 2px solid #ff9900;
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+
+  .bottom-margin {
+    margin-bottom:40px;
+  }
+
+  .hidden-img {
+    display: none;
+  }
+
+  footer small {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  } /*ovde je zatvoren 1. media queri za xs*/
+
+  .hidden-img { /*Iskreno, ne znam zasto ovo radi, ali radi. Ako premestim bilo gde drugde na velicinama ekrana vecim od xs se ne pojavljuje slika*/
+    display: none;
+  }
+
+@media all and (min-width:768px) {
+
+  .section1 {
+    margin: 80px 0 80px 0;
+  }
+
+  .h2-margin {
+    margin: 10px 0 40px 0;
+  }
+
+  .h3-style {
+    margin: 50px 0 30px 0;
+  }
+
+  .second-h3-style {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-family: Open Sans Semibold, Arial, sans-serif;
+    color: #333333;
+    width: 66.666%;
+    padding: 70px 0 40px 0;
+  }
+
+  .paragraf-style-2 {
+    font-size: 16px;
+    color: #333;
+    font-family: Open Sans Light, Arial, sans-serif;
+    margin: 30px 0 20px 0;
+  }
+
+  input[type=submit] {
+    background-color: #ff9900;
+    color: #fff;
+    border: 2px solid #ff9900;
+    font-size: 22px;
+    margin-bottom: 70px;
+  }
+
+  .hidden-img {
+    display: block;
+  }
+
+  footer small {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media all and (min-width:992px) {
+  .section1 {
+    margin: 80px 0 70px 0;
+  }
+
+  .h2-margin {
+    margin: 10px 0 40px 0;
+  }
+
+  .second-h3-style {
+    padding: 70px 0 40px 0;
+    width: 58.333%; /*ovo predstavlja 7 bootstrap kolona. Sa ovim procentom je h3 na sredini iznad forme*/
+  }
+
+@media all and (min-width:1200px) {
+  .section1 {
+    margin: 90px 0 70px 0;
+  }
+
+  .h2-margin {
+    margin: 40px 0 40px 0;
+  }
+
+  .second-h3-style {
+    padding: 80px 0 40px 0;
+  }
+
+  input[type=submit] {
+    margin-bottom: 120px;
+  }
+
+}
